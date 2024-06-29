@@ -2,21 +2,40 @@ import React, { useState } from "react";
 
 export default function TextForm(props) {
   const handleUpClick = () => {
-    setText(text.toUpperCase());
-    console.log();
+    if (text !== "") {
+      setText(text.toUpperCase());
+      props.setAlertText("Text Converted To Upper Case");
+    } else {
+      props.setAlertText("Its Empty Please Enter Something!");
+    }
   };
   const handleLoClick = () => {
-    setText(text.toLowerCase());
+    if (text !== "") {
+      setText(text.toLowerCase());
+      props.setAlertText("Text Converted To Lower Case");
+    } else {
+      props.setAlertText("Its Empty Please Enter Something!");
+    }
   };
 
   const handleOnChange = (event) => {
     setText(event.target.value);
   };
   const handleClearText = () => {
-    setText("");
+    if (text !== "") {
+      setText("");
+      props.setAlertText("Text Cleared");
+    } else {
+      props.setAlertText("Its Empty Please Enter Something!");
+    }
   };
   const removeExtraSpace = () => {
-    setText((prevText) => prevText.replace(/\s+/g, " "));
+    if (text !== "") {
+      setText((prevText) => prevText.replace(/\s+/g, " "));
+      props.setAlertText("Extra Spaces Removed");
+    } else {
+      props.setAlertText("Its Empty Please Enter Something!");
+    }
   };
   const [text, setText] = useState("");
   let wordCount = text.trim() === "" ? 0 : text.trim().split(/\s+/).length;

@@ -4,9 +4,11 @@ import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Alert from "./components/Alert";
 
 function App() {
   const [mode, setMode] = useState("light");
+  const [alertText, setAlertText] = useState("Welcome to Text Utils");
 
   const toggleMode = () => {
     setMode(mode === "light" ? "dark" : "light");
@@ -27,10 +29,18 @@ function App() {
         mode={mode}
         toggleMode={toggleMode}
       />
+      <Alert alertText={alertText} setAlertText={setAlertText} />
+
       <Routes>
         <Route
           path="/TextForm"
-          element={<TextForm heading="Enter The Text to analyze" mode={mode} />}
+          element={
+            <TextForm
+              heading="Enter The Text to analyze"
+              mode={mode}
+              setAlertText={setAlertText}
+            />
+          }
         />
         <Route path="/About" element={<About mode={mode} />} />
       </Routes>
