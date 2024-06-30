@@ -5,7 +5,7 @@ export default function Alert(props) {
   return (
     <>
       <div
-        className="alert alert-warning alert-dismissible fade show text-center py-2  "
+        className="alert alert-warning alert-dismissible fade show text-end py-2  "
         role="alert"
         style={props.alertStyle}
       >

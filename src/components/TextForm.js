@@ -17,7 +17,6 @@ export default function TextForm(props) {
       props.setAlertText("Its Empty Please Enter Something!");
     }
   };
-
   const handleOnChange = (event) => {
     setText(event.target.value);
   };
