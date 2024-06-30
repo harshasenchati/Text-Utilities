@@ -47,7 +47,7 @@ export default function TextForm(props) {
 
   return (
     <>
-      <div className="container">
+      <div className="container py-3">
         <h1 style={textAquaStyle}>{props.heading}</h1>
         <div className="mb-3">
           <textarea

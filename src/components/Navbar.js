@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 export default function Navbar(props) {
   return (
     <nav
-      className={`navbar navbar-expand-lg ${
-        props.mode === "dark" ? "navbar-dark bg-dark" : "navbar-light bg-light"
+      className={`navbar navbar-expand-lg py-0 ${
+        props.mode === "dark" ? "navbar-dark bg-dark" : "navbar-dark bg-dark"
       }`}
     >
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/TextForm">
+      <div className="container-fluid ">
+        <Link className="navbar-brand py-3 " to="/TextForm">
           {props.title}
         </Link>
 
@@ -23,7 +23,7 @@ export default function Navbar(props) {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon "></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
@@ -46,7 +46,7 @@ export default function Navbar(props) {
               </Link>
             </li>
           </ul>
-          <div className="form-check form-switch">
+          <div className="form-check form-switch ">
             <input
               className="form-check-input"
               type="checkbox"
@@ -54,7 +54,7 @@ export default function Navbar(props) {
               id="flexSwitchCheckDefault"
               onClick={props.toggleMode}
             />
-            <label htmlFor="form-check-label">{`Enable ${
+            <label className="text-light" htmlFor="form-check-label">{`Enable ${
               props.mode === "light" ? "Dark" : "Light"
             }Mode`}</label>
           </div>
