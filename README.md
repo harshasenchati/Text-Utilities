@@ -6,7 +6,7 @@
 ---
 
 <div align="center">
-  <img src="link-to-your-gif.gif" alt="Project Demo">
+  <img src="https://github.com/harshasenchati/Text-Utilities/blob/main/Textutils-record.gif">
 </div>
 
 ---
