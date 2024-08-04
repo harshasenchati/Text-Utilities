@@ -18,9 +18,7 @@
 - [💻 Technologies Used](#technologies-used)
 - [⚙️ Setup](#setup)
 - [🚀 How to Use](#how-to-use)
-- [🗂 Project Structure](#project-structure)
 - [📜 License](#license)
-- [📬 Contact](#contact)
 
 ## Introduction
 
@@ -39,8 +37,12 @@ The Text Utilities application is a versatile tool built with React that provide
 ## Technologies Used
 
 - <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" width="30" height="30"> React
+- <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" width="30" height="30"> HTML
 - <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" width="30" height="30"> CSS
 - <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" width="30" height="30"> JavaScript
+
+
+
 
 ## Setup
 
@@ -48,4 +50,23 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/text-utilities.git
+   git clone https://github.com/harshasenchati/Text-Utilities.git
+   ```
+2. **Navigate to the project directory**:
+   ```bash
+   cd Text-Utilities
+   ```
+3. **Install the dependencies**:
+  ```bash
+npm install
+```
+4. **Run the development server**:
+  ```bash
+npm start
+```
+This will start the development server and typically open the application in your default browser. If it doesn’t, you can manually navigate to http://localhost:3000 in your browser.
+## Usage
+After following the setup steps, open your browser and navigate to http://localhost:3000 to view and interact with the Text-Utilities application.
+
+## License
+This project is licensed under the MIT License.
